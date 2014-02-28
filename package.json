@@ -1,6 +1,6 @@
 {
   "name": "describe-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Itay Weinberger <itay@joo.la>",
   "description": "Describes a JSON object",
   "engine": "node >= 0.10.x",
@@ -38,8 +38,8 @@
   },
   "main": "lib/describejson.js",
   "keywords": [
-    "kariosdb",
-    "cassandra"
+    "json",
+    "metadata"
   ],
   "license": "MIT"
 }
