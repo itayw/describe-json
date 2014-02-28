@@ -1,6 +1,6 @@
 # descirbe-json [![Build Status][3]][4] [![Coverage Status][1]][2]
 
-#### Describes JSON object
+#### Describes A JSON object
 
 The library takes a JSON object and returns it's metadata.
 
