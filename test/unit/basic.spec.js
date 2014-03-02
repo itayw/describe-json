@@ -18,6 +18,24 @@ describe('given an object', function () {
   it("should describe a JSON object", function () {
     var _obj = dj.describe(this.obj);
     expect(_obj).to.be.ok;
+  });
+
+  it("should flatten JSON object", function () {
+    var obj = {
+      level0: 1,
+      a: {
+        b: {
+          c: {
+            d: 1
+          }
+        }
+      },
+      aa: {
+        bb: ['cc']
+      }
+    };
+    var _obj = dj.flatten(obj);
+    expect(_obj).to.be.ok;
     console.log(_obj);
   });
 });
