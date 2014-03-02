@@ -2,6 +2,9 @@
 
 #### Describes a JSON object metadata 
 
+[![browser support](https://ci.testling.com/itayw/describe-json.png)
+](https://ci.testling.com/itayw/describe-json)
+
 The library takes a JSON object and returns it's metadata in several useful ways.   
 I've developed this package as part of the [joola.io project][joola.io] to handle the transformation of JSON rich documents into NoSQL datastores.
 This process requires some descriptive attributes for each of the JSON nodes and this library assists in this process.
