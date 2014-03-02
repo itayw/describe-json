@@ -117,6 +117,6 @@ Copyright (c) 2014 Itay Weinberger. MIT Licensed, see LICENSE for details.
 [3]: https://travis-ci.org/itayw/describe-json.png?branch=master
 [4]: https://travis-ci.org/itayw/describe-json?branch=master
 
-[joola.io] http://github.com/joola/joola.io
+[joola.io]: http://github.com/joola/joola.io
 [traverse]: https://github.com/substack/js-traverse
 [kindof]: https://github.com/moll/js-kindof
