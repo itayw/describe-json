@@ -1,7 +1,13 @@
 var
-  assert = require('assert'),
+  sinon = require('sinon'),
+  should = require('should'),
+  chai = require('chai'),
 
   dj = require('../../lib/describejson');
+
+chai.use(require('sinon-chai'));
+expect = chai.expect;
+
 
 describe('given an object', function () {
   before(function () {
@@ -29,7 +35,7 @@ describe('given an object', function () {
       array: [ 'number', 'date', [ 'number', 'number' ] ],
       nested: { number: 'number', string: 'string', date: 'date' } };
     var actual = dj.describe(this.obj);
-    assert.deepEqual(actual, expected, 'Failed to describe JSON object correctly');
+    expect(actual).to.deep.equal(expected);
   });
 
   it("should flatten JSON object", function () {
@@ -52,6 +58,6 @@ describe('given an object', function () {
       [ 'aa.bb', [ 'cc' ] ]
     ];
     var actual = dj.flatten(obj);
-    assert.deepEqual(actual, expected, 'Failed to flatten JSON object correctly');
+    expect(actual).to.deep.equal(expected);
   });
 });
