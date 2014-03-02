@@ -1,8 +1,8 @@
 {
   "name": "describe-json",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "author": "Itay Weinberger <itay@joo.la>",
-  "description": "Describes a JSON object",
+  "description": "Describes a JSON object metadata",
   "engine": "node >= 0.10.x",
   "repository": {
     "type": "git",
