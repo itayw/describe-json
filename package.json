@@ -1,6 +1,6 @@
 {
   "name": "describe-json",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Itay Weinberger <itay@joo.la>",
   "description": "Describes a JSON object metadata",
   "engine": "node >= 0.10.x",
@@ -17,7 +17,8 @@
     }
   ],
   "scripts": {
-    "test": "make test",
+    "test": "mocha --ui bdd test/unit",
+    "test-lint": "make test",
     "coveralls": "make coveralls"
   },
   "dependencies": {
@@ -41,5 +42,14 @@
     "json",
     "metadata"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/unit/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "chrome/latest",
+      "firefox/latest"
+    ]
+  }
 }
