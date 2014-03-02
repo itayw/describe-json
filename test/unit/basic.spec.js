@@ -1,6 +1,5 @@
 var
-  sinon = require('sinon'),
-  should = require('should'),
+  util = require('util'),
   chai = require('chai'),
 
   dj = require('../../lib/describejson');
@@ -49,13 +48,17 @@ describe('given an object', function () {
         }
       },
       aa: {
-        bb: ['cc']
+        bb: ['cc', 'dd', 123]
       }
     };
     var expected = [
-      [ 'level0', 1 ],
-      [ 'a.b.c.d', 1 ],
-      [ 'aa.bb', [ 'cc' ] ]
+      [ 'level0', 1, 'number' ],
+      [ 'a.b.c.d', 1 , 'number'],
+      [ 'aa.bb', [
+        [ 'cc', 'string' ],
+        ['dd', 'string'],
+        [123, 'number']
+      ]]
     ];
     var actual = dj.flatten(obj);
     expect(actual).to.deep.equal(expected);
