@@ -1,6 +1,6 @@
 # describe-json [![Build Status][3]][4] [![Coverage Status][1]][2]
 
-#### Describes A JSON object metadata 
+#### Describes a JSON object metadata 
 
 The library takes a JSON object and returns it's metadata in several useful ways.   
 I've developed this package as part of the [joola.io project][joola.io] to handle the transformation of JSON rich documents into NoSQL datastores.
@@ -105,7 +105,7 @@ Results with:
 ```
 
 ### Contributing
-I'd would love to get your help and have outlined a simple Contribution Policy to support a transparent and easy merging of ideas, code, bug fixes and features.
+I would love to get your help and have outlined a simple Contribution Policy to support a transparent and easy merging of ideas, code, bug fixes and features.
 If you're looking for a place to start, you can always go over the list of open issues, pick one and get started. If you're feeling lost or unsure, just let me know.
 
 ###License
