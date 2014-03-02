@@ -1,6 +1,6 @@
 # describe-json [![Build Status][3]][4] [![Coverage Status][1]][2]
 
-#### Describes A JSON object metadata 
+#### Describes a JSON object metadata 
 
 The library takes a JSON object and returns it's metadata in several useful ways.   
 I've developed this package as part of the [joola.io project][joola.io] to handle the transformation of JSON rich documents into NoSQL datastores.
