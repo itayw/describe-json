@@ -1,4 +1,7 @@
-var dj = require('../../lib/describejson');
+var
+  assert = require('assert'),
+
+  dj = require('../../lib/describejson');
 
 describe('given an object', function () {
   before(function () {
@@ -14,7 +17,7 @@ describe('given an object', function () {
         string: 'string',
         date: new Date()
       }
-    }
+    };
   });
 
   it("should describe a JSON object", function () {
