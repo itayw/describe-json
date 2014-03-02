@@ -1,6 +1,6 @@
 # describe-json [![Build Status][3]][4] [![Coverage Status][1]][2]
 
-#### Describes A JSON object
+#### Describes A JSON object metadata 
 
 The library takes a JSON object and returns it's metadata in several useful ways.   
 I've developed this package as part of the [joola.io project][joola.io] to handle the transformation of JSON rich documents into NoSQL datastores.
@@ -42,7 +42,7 @@ $ npm install describe-json
 
 ## API
 
-### `describe-json.describe (obj)
+### `describe-json.describe (obj)`
 Generates a metadata representation of the provided JSON object.
 
 Accepts `obj` which is a JSON object and traverses it to return another JSON object containing the metadata.  
@@ -77,7 +77,7 @@ Results with
 }
 ```
 
-### `describe-json.flatten (obj)
+### `describe-json.flatten (obj)`
 Returns an `array` of `[key, value]` containing all leaf node values.
 
 ```js
