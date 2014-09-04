@@ -32,7 +32,7 @@
     "istanbul": "*",
     "sinon": "*",
     "chai": "*",
-    "sinon-chai": "*",
+    "sinon-chai": "2.3.1",
     "expect": "*",
     "underscore": "*",
     "jshint": "*"
